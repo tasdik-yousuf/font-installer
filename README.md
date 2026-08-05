@@ -2,7 +2,6 @@
 
 A tiny, dependency-free shell script to install a collection of TrueType/OpenType fonts on Linux — for the current user or system-wide — using standard [fontconfig](https://www.freedesktop.org/wiki/Software/fontconfig/) conventions.
 
-[![CI](https://github.com/tasdik-yousuf/bangla-fonts-installer/actions/workflows/ci.yml/badge.svg)](https://github.com/tasdik-yousuf/bangla-fonts-installer/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 ## What it does
