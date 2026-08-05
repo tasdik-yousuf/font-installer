@@ -1,6 +1,6 @@
 # fonts/
 
-Put your `.ttf` / `.otf` Bangla font files directly in this folder (no subfolders — the installer only scans the top level).
+Put your `.ttf` / `.otf` font files directly in this folder (no subfolders — the installer only scans the top level).
 
 After adding files, run from the repo root:
 
@@ -9,13 +9,13 @@ After adding files, run from the repo root:
 ./install.sh            # install
 ```
 
-## fonts/LICENSES.md
+## Licensing note
 
-If you plan to push this repo publicly, create a `LICENSES.md` here listing, for each font family:
+This project's [MIT License](../LICENSE) covers the installer script only — not the fonts themselves. If you plan to push this repo publicly with real font files included, create a `fonts/LICENSES.md` here listing, for each font family:
 
 - Font name
-- Source / foundry (e.g. Google Fonts, Omicron Lab, SIL)
+- Source / foundry (e.g. Google Fonts, a type foundry, SIL)
 - License (e.g. SIL Open Font License 1.1)
 - Link to the original license text
 
-This keeps redistribution clean and gives credit to the original type designers.
+Only include fonts you have the right to redistribute.

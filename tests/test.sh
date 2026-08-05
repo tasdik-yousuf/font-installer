@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: MIT
 #
 # tests/test.sh — automated test suite for install.sh
 #
@@ -32,7 +33,7 @@ cp "${REPO_DIR}/install.sh" "${SANDBOX}/install.sh"
 chmod +x "${SANDBOX}/install.sh"
 cd "${SANDBOX}"
 
-INSTALLED_DIR="${HOME}/.local/share/fonts/bangla-fonts"
+INSTALLED_DIR="${HOME}/.local/share/fonts/custom-fonts"
 
 make_dummy_font() {
     # Content doesn't matter here — these tests exercise file discovery,
@@ -95,7 +96,7 @@ fi
 section "user install (--user)"
 if ./install.sh --user >/tmp/install.out 2>&1; then
     if [[ -f "${INSTALLED_DIR}/Test-Regular.ttf" && -f "${INSTALLED_DIR}/Test-Bold.ttf" ]]; then
-        ok "user install copies all fonts to ~/.local/share/fonts/bangla-fonts"
+        ok "user install copies all fonts to ~/.local/share/fonts/custom-fonts"
     else
         bad "user install ran but expected files are missing"
     fi

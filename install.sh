@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: MIT
 #
-# install.sh — Install Bangla fonts from this repo onto a Linux system.
+# install.sh — Install a collection of fonts from this repo onto a Linux system.
 #
 # Usage:
 #   ./install.sh              # install for current user only (default, no sudo needed)
@@ -16,7 +17,7 @@ set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 FONTS_SRC="${REPO_DIR}/fonts"
-COLLECTION_NAME="bangla-fonts"
+COLLECTION_NAME="custom-fonts"
 
 USER_FONT_DIR="${HOME}/.local/share/fonts/${COLLECTION_NAME}"
 SYSTEM_FONT_DIR="/usr/share/fonts/truetype/${COLLECTION_NAME}"
@@ -142,4 +143,4 @@ refresh_cache "${HOME}"
 
 log "Done. Installed fonts:"
 printf '  - %s\n' "${FONT_FILES[@]##*/}"
-log "Verify with: fc-list | grep -i bangla   (or search for a specific family name)"
+log "Verify with: fc-list | grep -i \"<font family name>\""
