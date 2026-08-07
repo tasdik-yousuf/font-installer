@@ -1,0 +1,23 @@
+# Python dependencies for gui.py and tests/test_gui.py.
+#
+# IMPORTANT: On Linux, PyGObject is best installed through your distro's
+# package manager, NOT pip — it's a thin wrapper around system GObject
+# Introspection / GTK libraries, and `pip install` needs their C headers
+# present to build:
+#
+#   Debian/Ubuntu: sudo apt install python3-gi gir1.2-gtk-3.0
+#   Arch Linux:    sudo pacman -S python-gobject gtk3
+#
+# If you install via those, you do NOT need this file — the CLI (install.sh)
+# has no Python dependencies at all, and gui.py will already have what it
+# needs.
+#
+# This file exists for anyone who prefers a virtualenv / pip workflow, or
+# whose distro doesn't package PyGObject. Building from pip additionally
+# requires: libgirepository1.0-dev (or libgirepository-2.0-dev on newer
+# Debian/Ubuntu), gcc, libcairo2-dev, pkg-config, python3-dev, and the GTK3
+# dev headers (libgtk-3-dev) — install those first, then:
+#
+#   pip install -r requirements.txt --break-system-packages
+
+PyGObject==3.48.2

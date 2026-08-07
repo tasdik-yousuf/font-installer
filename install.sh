@@ -19,6 +19,10 @@ REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 FONTS_SRC="${REPO_DIR}/fonts"
 COLLECTION_NAME="custom-fonts"
 
+# fonts/ isn't tracked in git (it's just a drop folder for your own fonts) —
+# create it on first run so a fresh clone behaves predictably.
+mkdir -p "${FONTS_SRC}"
+
 USER_FONT_DIR="${HOME}/.local/share/fonts/${COLLECTION_NAME}"
 SYSTEM_FONT_DIR="/usr/share/fonts/truetype/${COLLECTION_NAME}"
 
