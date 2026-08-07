@@ -2,9 +2,9 @@
 Type=Application
 Name=Linux Font Installer
 Comment=Drag and drop .ttf/.otf fonts and install them with one click
-# Replace /path/to/bangla-fonts-installer below with the absolute path to
+# Replace /path/to/font-installer below with the absolute path to
 # your clone of this repo (desktop files require an absolute Exec path).
-Exec=python3 /path/to/bangla-fonts-installer/gui.py
+Exec=python3 /path/to/font-installer/gui.py
 Icon=preferences-desktop-font
 Terminal=false
 Categories=System;Settings;

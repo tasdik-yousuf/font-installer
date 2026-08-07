@@ -2,7 +2,7 @@
 
 A font installer for Linux — drag-and-drop GUI or one-line CLI — that installs a collection of TrueType/OpenType fonts for the current user or system-wide, using standard [fontconfig](https://www.freedesktop.org/wiki/Software/fontconfig/) conventions.
 
-[![CI](https://github.com/tasdik-yousuf/bangla-fonts-installer/actions/workflows/ci.yml/badge.svg)](https://github.com/tasdik-yousuf/bangla-fonts-installer/actions/workflows/ci.yml)
+[![CI](https://github.com/tasdik-yousuf/font-installer/actions/workflows/ci.yml/badge.svg)](https://github.com/tasdik-yousuf/font-installer/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
 ## What it does
@@ -33,8 +33,8 @@ If you'd rather use pip (e.g. inside a virtualenv), see [`requirements.txt`](./r
 ## Quick start
 
 ```bash
-git clone https://github.com/tasdik-yousuf/bangla-fonts-installer.git
-cd bangla-fonts-installer
+git clone https://github.com/tasdik-yousuf/font-installer.git
+cd font-installer
 ```
 
 Add your own `.ttf`/`.otf` files into the `fonts/` folder (created automatically the first time you run `install.sh` or `gui.py` — see [Adding your own fonts](#adding-your-own-fonts) below), then:
@@ -99,7 +99,7 @@ This also runs in CI as a separate job.
 ## Repository layout
 
 ```
-bangla-fonts-installer/
+font-installer/
 ├── tests/
 │   ├── test.sh              # automated test suite for install.sh (safe, isolated sandbox)
 │   └── test_gui.py          # headless smoke test for the GUI (safe, isolated sandbox)
